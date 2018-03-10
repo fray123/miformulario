@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Formulario</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- FORMULARIO -->
+<p id="demo"></p><br>
+<form id="formTest" class="formulario"  method="post" name="formTest">
+<!-- DIVISION LABEL -->
+	
+		<label for="" class="formulario_label_descri">Cedula	</label> <br>
+			<input type="number" id="cedula" class="caja" onkeypress="" placeholder="123456789"> 	<br>
+
+		<label for="" class="formulario_label_descri">Nombres	</label> <br>
+			<input type="text" id="nombres" class="caja" placeholder="Fulanito">		<br>
+
+		<label for="" class="formulario_label_descri">Apellidos	</label> <br>
+			<input type="text" id="apellidos" class="caja" placeholder="sutano">		<br>
+
+		<label for="" class="formulario_label_descri">Estudiante</label> <br>
+			<select name="" id="estudiante" class="caja">
+						<option value=""></option>
+						<option value="Ing. Sistemas">Ing. Sistemas</option>
+						<option value="Ing. Industrial">Ing. Industrial</option>
+						<option value="Ing. Ambiental">Ing. Ambiental</option>
+						<option value="Ing. Mecanica">Ing. Mecanica</option>		
+			</select><br>
+
+		<label for="" class="formulario_label_descri">Sexo</label>
+			<input type="radio" id="valor_radio_1" name="sexo" value="M">M 
+			<input type="radio" id="valor_radio_2" name="sexo" value="F" >F<br><br>
+
+		<label for="" class="formulario_label_descri">Fecha de Nacimiento</label> <br>
+			<input type="date" id="fecha" class="caja"><br>
+
+		<label for="" class="formulario_label_descri">Rango</label> <br>
+			<input type="range" id="rango" min="0" max="10" value="0" step="1" class="caja"><br>
+
+		<label for="" class="formulario_label_descri">E-mail</label> <br>
+			<input type="email" id="email" class="caja" placeholder="ejemplo@ejemplo.com"><br>
+
+		<label for="" class="formulario_label_descri">Pagina Web</label> <br>
+			<input type="url" id="url" class="caja" placeholder="www.ejemplo.com"><br>
+
+		<label for="" class="formulario_label_descri">Lo que piensas</label> <br>
+			<textarea name="" id="texto" cols="30" rows="10" class="texarea"> </textarea><br>
+
+		<button type="button" onclick="validacion();" class="boton">Registrar</button> 
+		<button type="button" onclick='myDeleteFunction();' class="boton">Borrar</button>
+		<input type="reset" class="boton"><br><br>
+
+		<input class="caja" type="text" id="myInput"  placeholder="Buscar por Nombre" title="Type in a name">
+		<button type="button" class="boton" onclick="search()" placeholder="">Buscar</button><br><br>
+
+<!-- onclick='myCreateFunction();' -->
+		
+			<script type="text/javascript" src="js/validacion.js">
+				
+			</script>		
+<!-- 			<script type="text/javascript" src="js/registro.js"></script> -->
+
+
+</form>
+
+
+		<br>
+		<br>
+		
+	
+	<table id="myTable">
+		<tr>
+			<th>No.</th>
+			<th>Cedula</th>
+			<th>Nombres</th>
+			<th>Apellidos</th>
+			<th>Estudiante</th>
+			<th>Sexo</th>
+			<th>Fecha de Nacimiento</th>
+			<th>Rango</th>
+			<th>E-mail</th>
+			<th>Pagina Web</th>
+			<th>Texto</th>
+		</tr>
+
+	</table>
+
+
+
+
+		
+
+
+</body>
+</html>
